@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container form">
+            <section class="form__background"></section>
+            <section class="form__wrapper">              
+                <form class="form__container" id="form" action="" method="post" name="myForm">
+                   <h1 class="form__title">Hello</h1> 
+                    <div class="form__content">
+                        <div class="form__subtitle">
+                            For business enquiries please use the form below
+                        </div> 
+                        <div class="form__required">
+                            Required
+                        </div>   
+                        <div class="form__inputs input">
+                            <div class="input__item name">
+                                <label for="name" class="name__title input__title">
+                                    Name
+                                </label>
+                                <div class="name__input">
+                                    <input type="text" name="name" id="name" placeholder=" "  required>
+                                </div>
+                            </div>
+                            <div class="input__item company">
+                                <label for="company" class="company__title input__title">
+                                    Company
+                                </label>
+                                <div class="company__input">
+                                    <input type="text" name="company" id="company" placeholder=" "  required>
+                                </div>
+                            </div>
+                            <div class="input__item email">
+                                <label for="email" class="email__title input__title">
+                                    E-mail
+                                </label>
+                                <div class="email__input">
+                                    <input type="email" name="email" id="email" placeholder=" "  required>
+                                </div>
+                            </div>
+                            <div class="input__item phone">
+                                <label for="phone" class="phone__title input__title" >
+                                    Phone
+                                </label>
+                                <div class="phone__input">
+                                    <input type="tel" name="phone"  id="phone" placeholder=" "  maxlength="50">
+                                </div>
+                            </div>
+                            <div class="input__item subject">
+                                <label for="subject" class="subject__title input__title">
+                                    Subject
+                                </label>
+                                <div class="subject__input">
+                                    <input type="text" name="subject" id="subject" placeholder=" " >
+                                </div>
+                            </div>
+                            <div class="input__item message">
+                                <label for="message" class="message__title input__title">
+                                    Message
+                                </label>
+                                <div class="message__input">
+                                    <input type="text" name="message" id="message" placeholder=" "  required>
+                                </div>
+                            </div>
+                            <div class="input__item privacy">
+                                <div  class="privasy__title input__title">
+                                    <input class="custom-checkbox" type="checkbox" name="privacy" id="privacy">
+                                    <label for="privacy">I accept <a href="#">Terms and Privacy Policy</a></label> 
+                                </div>
+                            </div>
+                            <div class="input__send send">
+                                <input type="submit" value="Send" id="send" name="send">
+                            </div>
+                        </div>
+                    </div>                    
+                </form>
+            </section>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
