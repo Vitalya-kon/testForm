@@ -83,6 +83,12 @@ label{
     justify-content: center;
     align-items: center;
 }
+@media (max-width:768px) {
+    .form__wrapper{
+        margin-top: 20px;
+        align-items: flex-start;
+    }
+    }
 .form__title{
     font-family: var(--roboto);
     color: #FFFFFF;
